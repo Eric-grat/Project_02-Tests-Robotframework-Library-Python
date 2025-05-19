@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2025-05-08T17:41:09.311271" rpa="false" schemaversion="5">
+<suite id="s1" name="Test case 10" source="C:\Users\erick\OneDrive\Documents\AUTOMATISATION_TEST_PROJET_001\Tests\Test_case_10.robot">
+<test id="s1-t1" name="Add Products in Cart" line="8">
+<kw name="Open '${URL}' With '${EDGE}'" owner="ResFrontend" source_name="Open '${Url}' With '${Browser}'">
+<kw name="Open Url With Browser" owner="LibFrontend">
+<msg time="2025-05-08T17:41:09.654670" level="INFO">Opening browser 'edge' to base url 'https://automationexercise.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-05-08T17:41:09.654670" elapsed="3.874093"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="LibFrontend">
+<arg>xpath=//p[@class='fc-button-label' and text()='Autoriser']</arg>
+<arg>timeout=50</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-08T17:41:13.528763" elapsed="1.043446"/>
+</kw>
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-08T17:41:16.099851" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf24a667b1d7984e5e2bfa95ff697ddd", element="f.E42F54CD3CADEAAAD378D2A3999AF3F0.d.236B013382034B080F4570BBD261E7A5.e.1693")&gt;'.</msg>
+<arg>//p[@class='fc-button-label' and text()='Autoriser']</arg>
+<status status="PASS" start="2025-05-08T17:41:14.572209" elapsed="2.141324"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:09.654670" elapsed="7.058863"/>
+</kw>
+<kw name="Check '${Automation_exercice_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T17:41:19.279809" level="INFO">Element '//img[@src='/static/images/home/logo.png' and @alt='Website for automation practice']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T17:41:16.715238" elapsed="2.564571"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:16.713533" elapsed="2.566276"/>
+</kw>
+<kw name="Click '${Products}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-08T17:41:20.815735" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf24a667b1d7984e5e2bfa95ff697ddd", element="f.E42F54CD3CADEAAAD378D2A3999AF3F0.d.236B013382034B080F4570BBD261E7A5.e.466")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-08T17:41:19.279809" elapsed="4.255131"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:19.279809" elapsed="4.255131"/>
+</kw>
+<kw name="Click '${add_to_cart1_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-08T17:41:25.082833" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf24a667b1d7984e5e2bfa95ff697ddd", element="f.E42F54CD3CADEAAAD378D2A3999AF3F0.d.97962172952AB5D2D1DC64E7C77869D2.e.8638")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-08T17:41:23.534940" elapsed="2.115095"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:23.534940" elapsed="2.115095"/>
+</kw>
+<kw name="Click '${Continue_Shopping}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-08T17:41:27.183705" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf24a667b1d7984e5e2bfa95ff697ddd", element="f.E42F54CD3CADEAAAD378D2A3999AF3F0.d.97962172952AB5D2D1DC64E7C77869D2.e.8632")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-08T17:41:25.650997" elapsed="2.089687"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:25.650997" elapsed="2.089687"/>
+</kw>
+<kw name="Click '${add_to_cart2_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-08T17:41:29.275328" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf24a667b1d7984e5e2bfa95ff697ddd", element="f.E42F54CD3CADEAAAD378D2A3999AF3F0.d.97962172952AB5D2D1DC64E7C77869D2.e.8657")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-08T17:41:27.740684" elapsed="2.089940"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:27.740684" elapsed="2.089940"/>
+</kw>
+<kw name="Click '${Continue_Shopping}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-08T17:41:31.362101" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf24a667b1d7984e5e2bfa95ff697ddd", element="f.E42F54CD3CADEAAAD378D2A3999AF3F0.d.97962172952AB5D2D1DC64E7C77869D2.e.8632")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-08T17:41:29.830624" elapsed="2.082942"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:29.830624" elapsed="2.082942"/>
+</kw>
+<kw name="Click '${Cart}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-08T17:41:33.444919" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="cf24a667b1d7984e5e2bfa95ff697ddd", element="f.E42F54CD3CADEAAAD378D2A3999AF3F0.d.97962172952AB5D2D1DC64E7C77869D2.e.8512")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-08T17:41:31.913566" elapsed="2.988752"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:31.913566" elapsed="2.988752"/>
+</kw>
+<kw name="Check '${cart_des_product1_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T17:41:37.458110" level="INFO">Element '//td[@class='cart_description']//a[@href='/product_details/1' and text()='Blue Top']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T17:41:34.903687" elapsed="2.554423"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:34.902318" elapsed="2.555792"/>
+</kw>
+<kw name="Check '${cart_des_product2_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T17:41:40.006894" level="INFO">Element '//td[@class='cart_description']//a[@href='/product_details/1' and text()='Blue Top']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T17:41:37.459334" elapsed="2.547560"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:37.459334" elapsed="2.547560"/>
+</kw>
+<kw name="Check '${cart_price_product1_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T17:41:42.560383" level="INFO">Element '//td[@class='cart_price']/p[text()='Rs. 500']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T17:41:40.007902" elapsed="2.552481"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:40.007902" elapsed="2.552481"/>
+</kw>
+<kw name="Check '${cart_price_product2_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T17:41:45.111410" level="INFO">Element '//td[@class='cart_price']/p[text()='Rs. 400']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T17:41:42.560383" elapsed="2.551027"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:42.560383" elapsed="2.551027"/>
+</kw>
+<kw name="Check '${cart_qtity_product1_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T17:41:47.665830" level="INFO">Element '//td[@class='cart_quantity']/button[@class='disabled' and text()='1']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T17:41:45.111410" elapsed="2.554420"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:45.111410" elapsed="2.554420"/>
+</kw>
+<kw name="Check '${cart_qtity_product2_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T17:41:50.215199" level="INFO">Element '//td[@class='cart_quantity']/button[@class='disabled' and text()='1']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T17:41:47.665830" elapsed="2.549369"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:47.665830" elapsed="2.549369"/>
+</kw>
+<kw name="Check '${cart_total_product1_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T17:41:52.768643" level="INFO">Element '//p[@class='cart_total_price' and text()='Rs. 500']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T17:41:50.215199" elapsed="2.553444"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:50.215199" elapsed="2.553444"/>
+</kw>
+<kw name="Check '${cart_total_product2_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T17:41:55.320818" level="INFO">Element '//p[@class='cart_total_price' and text()='Rs. 400']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T17:41:52.768643" elapsed="2.552175"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:52.768643" elapsed="2.552175"/>
+</kw>
+<status status="PASS" start="2025-05-08T17:41:09.646178" elapsed="45.674640"/>
+</test>
+<status status="PASS" start="2025-05-08T17:41:09.313277" elapsed="46.007541"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test case 10">Test case 10</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

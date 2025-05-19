@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2025-05-01T00:20:05.791761" rpa="false" schemaversion="5">
+<suite id="s1" name="Test case 01" source="C:\Users\erick\OneDrive\Documents\AUTOMATISATION_TEST_PROJET_001\Tests\Test_case_01.robot">
+<test id="s1-t1" name="Register User" line="8">
+<kw name="Open '${URL}' With '${EDGE}'" owner="ResFrontend" source_name="Open '${Url}' With '${Browser}'">
+<kw name="Open Url With Browser" owner="LibFrontend">
+<msg time="2025-05-01T00:20:06.098978" level="INFO">Opening browser 'edge' to base url 'https://automationexercise.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-05-01T00:20:06.098978" elapsed="3.828763"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="LibFrontend">
+<arg>xpath=//p[@class='fc-button-label' and text()='Autoriser']</arg>
+<arg>timeout=50</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-01T00:20:09.927741" elapsed="1.020555"/>
+</kw>
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-01T00:20:12.506311" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.22AA12F6A6B36336CED8C55F7F9278E9.e.1693")&gt;'.</msg>
+<arg>//p[@class='fc-button-label' and text()='Autoriser']</arg>
+<status status="PASS" start="2025-05-01T00:20:10.948296" elapsed="2.177849"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:06.098113" elapsed="7.028032"/>
+</kw>
+<kw name="Check '${Automation_exercice_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-01T00:20:15.690098" level="INFO">Element '//img[@src='/static/images/home/logo.png' and @alt='Website for automation practice']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-01T00:20:13.126145" elapsed="2.563953"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:13.126145" elapsed="2.563953"/>
+</kw>
+<kw name="Click '${Signup_Login_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-01T00:20:17.225738" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.22AA12F6A6B36336CED8C55F7F9278E9.e.466")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-01T00:20:15.691105" elapsed="3.734307"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:15.691105" elapsed="3.734307"/>
+</kw>
+<kw name="Check '${New_User_Signup_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-01T00:20:21.980438" level="INFO">Element '//h2[text()='New User Signup!']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-01T00:20:19.425412" elapsed="2.555026"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:19.425412" elapsed="2.555026"/>
+</kw>
+<kw name="Select '${name_field_xpath}' And Enter '${name1}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:20:22.494685" level="INFO">Typing text 'Eric' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.7FDB446BD69DCD3B7225BF43049D57C6.e.8000")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:20:21.981444" elapsed="1.598285"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:21.981444" elapsed="1.598285"/>
+</kw>
+<kw name="Select '${email_field_xpath}' And Enter '${email1}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:20:24.094057" level="INFO">Typing text 'erickgratias17@gmal.com' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.7FDB446BD69DCD3B7225BF43049D57C6.e.8001")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:20:23.580740" elapsed="1.593025"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:23.580740" elapsed="1.593025"/>
+</kw>
+<kw name="Click '${Signup_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-01T00:20:26.708460" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.7FDB446BD69DCD3B7225BF43049D57C6.e.8008")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-01T00:20:25.173765" elapsed="3.606533"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:25.173765" elapsed="3.606533"/>
+</kw>
+<kw name="Check '${ENTER_ACCOUNT_INFORMATION_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-01T00:20:31.340304" level="INFO">Element '//b[text()='Enter Account Information']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-01T00:20:28.781311" elapsed="2.558993"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:28.781311" elapsed="2.558993"/>
+</kw>
+<kw name="Select '${password_field_xpath}' And Enter '${password1}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:20:31.853950" level="INFO">Typing text 'Eric1234' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.F0F4690D028979A6F262D56E22439D00.e.8317")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:20:31.341311" elapsed="1.595646"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:31.340304" elapsed="1.596653"/>
+</kw>
+<kw name="Verify and Select '${Date_of_Birth_day}' From The '${Date_of_Birth_day_list_xpath}'" owner="ResFrontend" source_name="Verify and Select '${Item_value}' From The '${List}'">
+<kw name="Select Option From List" owner="LibFrontend">
+<msg time="2025-05-01T00:20:33.960341" level="INFO">Element '//*[@id="days"]' is displayed.</msg>
+<msg time="2025-05-01T00:20:34.982368" level="INFO">Element '//*[@id="days"]/option[@value="20" ]' is displayed.</msg>
+<msg time="2025-05-01T00:20:34.982368" level="INFO">Clicking element '//*[@id="days"]/option[@value="20" ]'.</msg>
+<arg>${List}</arg>
+<arg>${Item_value}</arg>
+<status status="PASS" start="2025-05-01T00:20:32.938966" elapsed="3.080015"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:32.937967" elapsed="3.081014"/>
+</kw>
+<kw name="Verify and Select '${Date_of_Birth_month}' From The '${Date_of_Birth_month_list_xpath}'" owner="ResFrontend" source_name="Verify and Select '${Item_value}' From The '${List}'">
+<kw name="Select Option From List" owner="LibFrontend">
+<msg time="2025-05-01T00:20:37.043236" level="INFO">Element '//select[@data-qa='months']' is displayed.</msg>
+<msg time="2025-05-01T00:20:38.063506" level="INFO">Element '//select[@data-qa='months']/option[@value='5' ]' is displayed.</msg>
+<msg time="2025-05-01T00:20:38.063506" level="INFO">Clicking element '//select[@data-qa='months']/option[@value='5' ]'.</msg>
+<arg>${List}</arg>
+<arg>${Item_value}</arg>
+<status status="PASS" start="2025-05-01T00:20:36.020168" elapsed="3.074190"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:36.018981" elapsed="3.075377"/>
+</kw>
+<kw name="Verify and Select '${Date_of_Birth_year}' From The '${Date_of_Birth_year_list_xpath}'" owner="ResFrontend" source_name="Verify and Select '${Item_value}' From The '${List}'">
+<kw name="Select Option From List" owner="LibFrontend">
+<msg time="2025-05-01T00:20:40.118158" level="INFO">Element '//select[@data-qa='years']' is displayed.</msg>
+<msg time="2025-05-01T00:20:41.138314" level="INFO">Element '//select[@data-qa='years']/option[@value='1990' ]' is displayed.</msg>
+<msg time="2025-05-01T00:20:41.138314" level="INFO">Clicking element '//select[@data-qa='years']/option[@value='1990' ]'.</msg>
+<arg>${List}</arg>
+<arg>${Item_value}</arg>
+<status status="PASS" start="2025-05-01T00:20:39.095875" elapsed="3.072931"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:39.094358" elapsed="3.074448"/>
+</kw>
+<kw name="Verify And Select Checkbox '${news_letter_xpath}'" owner="ResFrontend" source_name="Verify And Select Checkbox '${element}'">
+<kw name="Checkbox Selected" owner="LibFrontend">
+<msg time="2025-05-01T00:20:44.720754" level="INFO">Element '//input[@type='checkbox' and @name='newsletter' and @id='newsletter']' is displayed.</msg>
+<msg time="2025-05-01T00:20:45.739794" level="INFO">Selecting checkbox '//input[@type='checkbox' and @name='newsletter' and @id='newsletter']'.</msg>
+<msg time="2025-05-01T00:20:48.346077" level="INFO">Le checkbox '//input[@type='checkbox' and @name='newsletter' and @id='newsletter']' a été sélectionné.</msg>
+<arg>${element}</arg>
+<status status="PASS" start="2025-05-01T00:20:42.170006" elapsed="6.176071"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:42.168806" elapsed="6.177271"/>
+</kw>
+<kw name="Verify And Select Checkbox '${special_offers_xpath}'" owner="ResFrontend" source_name="Verify And Select Checkbox '${element}'">
+<kw name="Checkbox Selected" owner="LibFrontend">
+<msg time="2025-05-01T00:20:50.895754" level="INFO">Element '//input[@type='checkbox' and @name='optin' and @id='optin']' is displayed.</msg>
+<msg time="2025-05-01T00:20:51.912536" level="INFO">Selecting checkbox '//input[@type='checkbox' and @name='optin' and @id='optin']'.</msg>
+<msg time="2025-05-01T00:20:54.503545" level="INFO">Le checkbox '//input[@type='checkbox' and @name='optin' and @id='optin']' a été sélectionné.</msg>
+<arg>${element}</arg>
+<status status="PASS" start="2025-05-01T00:20:48.346077" elapsed="6.157468"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:48.346077" elapsed="6.157468"/>
+</kw>
+<kw name="Select '${first_name_xpath} ' And Enter '${first_name1}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:20:55.017692" level="INFO">Typing text 'Danie' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.F0F4690D028979A6F262D56E22439D00.e.8323")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:20:54.503545" elapsed="1.595934"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:54.503545" elapsed="1.595934"/>
+</kw>
+<kw name="Select '${last_name_xpath}' And Enter '${last_name1}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:20:56.611622" level="INFO">Typing text 'Daniella' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.F0F4690D028979A6F262D56E22439D00.e.8324")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:20:56.099479" elapsed="1.608523"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:56.099479" elapsed="1.608523"/>
+</kw>
+<kw name="Select '${company_xpath}' And Enter '${company}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:20:58.222288" level="INFO">Typing text 'Ignimission' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.F0F4690D028979A6F262D56E22439D00.e.8325")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:20:57.708002" elapsed="1.606103"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:57.708002" elapsed="1.606516"/>
+</kw>
+<kw name="Select '${adress_xpath} ' And Enter '${adress}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:20:59.828652" level="INFO">Typing text '3 Avenue Albert Einstein' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.F0F4690D028979A6F262D56E22439D00.e.8326")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:20:59.315530" elapsed="1.607848"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:59.314518" elapsed="1.608860"/>
+</kw>
+<kw name="Select '${State_xpath}' And Enter '${State}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:21:01.437259" level="INFO">Typing text 'France' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.F0F4690D028979A6F262D56E22439D00.e.8329")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:21:00.923378" elapsed="1.590963"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:21:00.923378" elapsed="1.590963"/>
+</kw>
+<kw name="Select '${City_xpath}' And Enter '${City}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:21:03.027430" level="INFO">Typing text 'Lyon' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.F0F4690D028979A6F262D56E22439D00.e.8330")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:21:02.515441" elapsed="1.598745"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:21:02.515441" elapsed="1.598745"/>
+</kw>
+<kw name="Select '${Zipcode_xpath}' And Enter '${Zipcode}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:21:04.629518" level="INFO">Typing text '69100' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.F0F4690D028979A6F262D56E22439D00.e.8331")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:21:04.115805" elapsed="1.593055"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:21:04.115209" elapsed="1.593651"/>
+</kw>
+<kw name="Select '${Mobile_Number_xpath}' And Enter '${Mobile_Number}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-01T00:21:06.222420" level="INFO">Typing text '0858957544' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.F0F4690D028979A6F262D56E22439D00.e.8332")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-01T00:21:05.709879" elapsed="1.593828"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:21:05.709879" elapsed="1.593828"/>
+</kw>
+<kw name="Click '${create_account_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-01T00:21:08.837524" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.F0F4690D028979A6F262D56E22439D00.e.8340")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-01T00:21:07.305230" elapsed="4.393439"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:21:07.303707" elapsed="4.394962"/>
+</kw>
+<kw name="Click '${Continue_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-01T00:21:13.236903" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.01C4B64A42617E96E23158B191A20D64.e.9543")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-01T00:21:11.698669" elapsed="3.802351"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:21:11.698669" elapsed="3.802351"/>
+</kw>
+<kw name="Check '${Logged_in_as_username_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-01T00:21:18.058283" level="INFO">Element '//a[./i[@class='fa fa-user'] and contains(text(), 'Logged in as')]' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-01T00:21:15.501544" elapsed="2.556739"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:21:15.501544" elapsed="2.556739"/>
+</kw>
+<kw name="Click '${Delete_Account_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-01T00:21:19.590425" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="29f8773096a0bb5772da74c226362e03", element="f.50F3CAE027C89DDC95480C9B3EC31A5F.d.40985B322B17FB323F1DF25176C45E12.e.10185")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-01T00:21:18.059292" elapsed="3.041658"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:21:18.059292" elapsed="3.041658"/>
+</kw>
+<kw name="Check '${ACCOUNT_DELETED_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-01T00:21:23.674156" level="INFO">Element '//b[text()='Account Deleted!']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-01T00:21:21.101956" elapsed="2.572200"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:21:21.101956" elapsed="2.572200"/>
+</kw>
+<status status="PASS" start="2025-05-01T00:20:06.096810" elapsed="77.578364"/>
+</test>
+<status status="PASS" start="2025-05-01T00:20:05.792825" elapsed="77.882349"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test case 01">Test case 01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

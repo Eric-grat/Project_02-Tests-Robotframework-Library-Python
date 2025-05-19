@@ -1,0 +1,37 @@
+# Selenium WebDriver pour automatiser l'interaction avec les navigateurs
+selenium
+
+# webdriver-manager pour gérer automatiquement les drivers des navigateurs (ex. ChromeDriver, GeckoDriver)
+webdriver-manager
+
+# pytest pour l'exécution des tests unitaires et l'intégration avec Selenium
+pytest
+
+# pytest-selenium pour faciliter l'intégration de Selenium avec pytest
+pytest-selenium
+
+# pytest-html pour générer des rapports HTML des tests
+pytest-html
+
+# pytest-xdist pour exécuter des tests en parallèle (utile pour accélérer les tests)
+pytest-xdist
+
+# allure-pytest pour un reporting avancé avec Allure (si tu veux utiliser Allure pour tes rapports)
+allure-pytest
+
+# requests pour les tests d'API REST (utile si tu fais des tests d'API en plus des tests Selenium)
+requests
+
+# Faker pour générer des données aléatoires (utile pour remplir des formulaires, générer des données de test)
+Faker
+
+# Pillow pour la gestion des images (utile pour capturer des captures d'écran pendant les tests)
+Pillow
+
+# pytest-mock pour faciliter le mock d'objets lors des tests unitaires
+pytest-mock
+# pytest-django si tu utilises Django dans ton projet (utile pour tester les applications Django avec Selenium)
+pytest-django
+
+# splinter pour une autre bibliothèque d'automatisation des tests si tu veux l'utiliser en complément de Selenium
+splinter

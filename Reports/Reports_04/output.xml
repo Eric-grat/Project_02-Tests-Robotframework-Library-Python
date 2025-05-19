@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2025-05-02T13:35:00.920154" rpa="false" schemaversion="5">
+<suite id="s1" name="Test case 04" source="C:\Users\erick\OneDrive\Documents\AUTOMATISATION_TEST_PROJET_001\Tests\Test_case_04.robot">
+<test id="s1-t1" name="Logout User" line="8">
+<kw name="Open '${URL}' With '${EDGE}'" owner="ResFrontend" source_name="Open '${Url}' With '${Browser}'">
+<kw name="Open Url With Browser" owner="LibFrontend">
+<msg time="2025-05-02T13:35:01.236038" level="INFO">Opening browser 'edge' to base url 'https://automationexercise.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-05-02T13:35:01.234907" elapsed="4.307682"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="LibFrontend">
+<arg>xpath=//p[@class='fc-button-label' and text()='Autoriser']</arg>
+<arg>timeout=50</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-02T13:35:05.542589" elapsed="1.036472"/>
+</kw>
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-02T13:35:08.107975" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1b5b92675847886991912c0fbaf91d01", element="f.052937E66B6FB644C91D6C92EF03EAB4.d.C4CA0560B6433580924CEF53AEDF07F0.e.1693")&gt;'.</msg>
+<arg>//p[@class='fc-button-label' and text()='Autoriser']</arg>
+<status status="PASS" start="2025-05-02T13:35:06.579061" elapsed="2.143648"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:01.234907" elapsed="7.487802"/>
+</kw>
+<kw name="Check '${Automation_exercice_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-02T13:35:11.302504" level="INFO">Element '//img[@src='/static/images/home/logo.png' and @alt='Website for automation practice']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-02T13:35:08.722709" elapsed="2.579795"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:08.722709" elapsed="2.579795"/>
+</kw>
+<kw name="Click '${Signup_Login_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-02T13:35:12.835637" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1b5b92675847886991912c0fbaf91d01", element="f.052937E66B6FB644C91D6C92EF03EAB4.d.C4CA0560B6433580924CEF53AEDF07F0.e.469")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-02T13:35:11.303866" elapsed="3.344273"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:11.302504" elapsed="3.345635"/>
+</kw>
+<kw name="Check '${Loggin_to_account_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-02T13:35:17.212330" level="INFO">Element '//h2[text()='Login to your account']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-02T13:35:14.649148" elapsed="2.563182"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:14.648139" elapsed="2.564191"/>
+</kw>
+<kw name="Select '${email_login_field_xpath}' And Enter '${email2}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-02T13:35:17.727092" level="INFO">Typing text 'erickgratias18@gmal.com' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1b5b92675847886991912c0fbaf91d01", element="f.052937E66B6FB644C91D6C92EF03EAB4.d.BAD49B8217315FDC5C30C9CFA0D99386.e.7966")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-02T13:35:17.212330" elapsed="1.613108"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:17.212330" elapsed="1.613108"/>
+</kw>
+<kw name="Select '${password_login_field_xpath}' And Enter '${password2}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-02T13:35:19.339773" level="INFO">Typing text 'Eric1234' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="1b5b92675847886991912c0fbaf91d01", element="f.052937E66B6FB644C91D6C92EF03EAB4.d.BAD49B8217315FDC5C30C9CFA0D99386.e.7967")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-02T13:35:18.825957" elapsed="1.591145"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:18.825957" elapsed="1.591145"/>
+</kw>
+<kw name="Click '${login_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-02T13:35:21.949231" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1b5b92675847886991912c0fbaf91d01", element="f.052937E66B6FB644C91D6C92EF03EAB4.d.BAD49B8217315FDC5C30C9CFA0D99386.e.7974")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-02T13:35:20.418636" elapsed="4.380268"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:20.417629" elapsed="4.381275"/>
+</kw>
+<kw name="Check '${Logged_in_as_username_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-02T13:35:27.360170" level="INFO">Element '//a[./i[@class='fa fa-user'] and contains(text(), 'Logged in as')]' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-02T13:35:24.799922" elapsed="2.560248"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:24.799922" elapsed="2.560248"/>
+</kw>
+<kw name="Click '${logout_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-02T13:35:28.892905" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="1b5b92675847886991912c0fbaf91d01", element="f.052937E66B6FB644C91D6C92EF03EAB4.d.5C88E8976C8A3422ECC38A4C593A6549.e.8788")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-02T13:35:27.361184" elapsed="3.529177"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:27.361184" elapsed="3.529177"/>
+</kw>
+<kw name="Check '${Loggin_to_account_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-02T13:35:33.442578" level="INFO">Element '//h2[text()='Login to your account']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-02T13:35:30.890879" elapsed="2.551699"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:30.890879" elapsed="2.551699"/>
+</kw>
+<status status="PASS" start="2025-05-02T13:35:01.229708" elapsed="32.213379"/>
+</test>
+<status status="PASS" start="2025-05-02T13:35:00.922365" elapsed="32.521728"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test case 04">Test case 04</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

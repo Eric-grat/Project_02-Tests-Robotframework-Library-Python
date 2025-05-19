@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.12.4 on win32)" generated="2025-05-08T12:17:59.285602" rpa="false" schemaversion="5">
+<suite id="s1" name="Test case 09" source="C:\Users\erick\OneDrive\Documents\AUTOMATISATION_TEST_PROJET_001\Tests\Test_case_09.robot">
+<test id="s1-t1" name="Search Product" line="8">
+<kw name="Open '${URL}' With '${EDGE}'" owner="ResFrontend" source_name="Open '${Url}' With '${Browser}'">
+<kw name="Open Url With Browser" owner="LibFrontend">
+<msg time="2025-05-08T12:17:59.611187" level="INFO">Opening browser 'edge' to base url 'https://automationexercise.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-05-08T12:17:59.611187" elapsed="3.937114"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="LibFrontend">
+<arg>xpath=//p[@class='fc-button-label' and text()='Autoriser']</arg>
+<arg>timeout=50</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-05-08T12:18:03.548301" elapsed="1.019835"/>
+</kw>
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-08T12:18:06.111454" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="617b4299973df28ae445fc428162a8b8", element="f.F7FF9B1D9784A936B0D5EE6B29BF9EB1.d.EBAC5E7CEEE6ECD7188C1C472514A12D.e.1693")&gt;'.</msg>
+<arg>//p[@class='fc-button-label' and text()='Autoriser']</arg>
+<status status="PASS" start="2025-05-08T12:18:04.568640" elapsed="2.160385"/>
+</kw>
+<status status="PASS" start="2025-05-08T12:17:59.610185" elapsed="7.118840"/>
+</kw>
+<kw name="Check '${Automation_exercice_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T12:18:09.287069" level="INFO">Element '//img[@src='/static/images/home/logo.png' and @alt='Website for automation practice']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T12:18:06.730257" elapsed="2.556812"/>
+</kw>
+<status status="PASS" start="2025-05-08T12:18:06.729025" elapsed="2.558552"/>
+</kw>
+<kw name="Click '${Products}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-08T12:18:10.819488" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="617b4299973df28ae445fc428162a8b8", element="f.F7FF9B1D9784A936B0D5EE6B29BF9EB1.d.EBAC5E7CEEE6ECD7188C1C472514A12D.e.461")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-08T12:18:09.288587" elapsed="4.092509"/>
+</kw>
+<status status="PASS" start="2025-05-08T12:18:09.287577" elapsed="4.093519"/>
+</kw>
+<kw name="Check '${All Products_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T12:18:15.944891" level="INFO">Element '//h2[@class='title text-center' and text()='All Products']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T12:18:13.382109" elapsed="2.562782"/>
+</kw>
+<status status="PASS" start="2025-05-08T12:18:13.381096" elapsed="2.563795"/>
+</kw>
+<kw name="Select '${search_product}' And Enter '${Product_name}'" owner="ResFrontend" source_name="Select '${Field}' And Enter '${data}'">
+<kw name="Enter Credentials" owner="LibFrontend">
+<msg time="2025-05-08T12:18:16.456728" level="INFO">Typing text 'Men Tshirt' into text field '&lt;selenium.webdriver.remote.webelement.WebElement (session="617b4299973df28ae445fc428162a8b8", element="f.F7FF9B1D9784A936B0D5EE6B29BF9EB1.d.51ED12EC7C12FB699AD862B3B0341C6A.e.8356")&gt;'.</msg>
+<arg>${Field}</arg>
+<arg>${data}</arg>
+<status status="PASS" start="2025-05-08T12:18:15.944891" elapsed="1.608558"/>
+</kw>
+<status status="PASS" start="2025-05-08T12:18:15.944891" elapsed="1.608558"/>
+</kw>
+<kw name="Click '${submit_search_xpath}'" owner="ResFrontend" source_name="Click '${Button}'">
+<kw name="Click Button" owner="LibFrontend">
+<msg time="2025-05-08T12:18:19.085525" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="617b4299973df28ae445fc428162a8b8", element="f.F7FF9B1D9784A936B0D5EE6B29BF9EB1.d.51ED12EC7C12FB699AD862B3B0341C6A.e.8515")&gt;'.</msg>
+<arg>${Button}</arg>
+<status status="PASS" start="2025-05-08T12:18:17.553449" elapsed="3.624388"/>
+</kw>
+<status status="PASS" start="2025-05-08T12:18:17.553449" elapsed="3.624388"/>
+</kw>
+<kw name="Check '${Searched_Products_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T12:18:23.729804" level="INFO">Element '//h2[@class='title text-center' and text()='Searched Products']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T12:18:21.178345" elapsed="2.551459"/>
+</kw>
+<status status="PASS" start="2025-05-08T12:18:21.178345" elapsed="2.551459"/>
+</kw>
+<kw name="Check '${Men_Tshirt_xpath}' visibility" owner="ResFrontend" source_name="Check '${Element}' visibility">
+<kw name="Is Element Visible" owner="LibFrontend">
+<msg time="2025-05-08T12:18:26.279401" level="INFO">Element '//p[text()='Men Tshirt']' is displayed.</msg>
+<arg>${Element}</arg>
+<status status="PASS" start="2025-05-08T12:18:23.730816" elapsed="2.548585"/>
+</kw>
+<status status="PASS" start="2025-05-08T12:18:23.729804" elapsed="2.550104"/>
+</kw>
+<status status="PASS" start="2025-05-08T12:17:59.609093" elapsed="26.670815"/>
+</test>
+<status status="PASS" start="2025-05-08T12:17:59.286604" elapsed="26.994311"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test case 09">Test case 09</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
