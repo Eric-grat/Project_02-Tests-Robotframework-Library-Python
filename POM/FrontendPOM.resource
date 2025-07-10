@@ -32,9 +32,6 @@ ${State}    France
 ${City}    Lyon
 ${Zipcode}    69100
 ${Mobile_Number}    0858957544
-
-${file}    C:\Users\erick\OneDrive\Desktop\trouve.pdf
-
 ${Product_name}    Men Tshirt
 
 

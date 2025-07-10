@@ -1,7 +1,9 @@
 *** Settings ***
-#Library    ../Library/LibFrontend.py
-Resource    ../POM/FrontendPOM.resource
 Resource    ../Resources/ResFrontend.resource
+Resource    ../POM/HeaderPage.resource
+Resource    ../POM/LoginPage.resource
+Resource    ../POM/Variable.resource
+Resource    ../POM/ProductsPage.resource
 
 
 *** Test Cases ***

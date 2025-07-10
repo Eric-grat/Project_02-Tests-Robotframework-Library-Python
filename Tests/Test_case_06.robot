@@ -1,11 +1,12 @@
 *** Settings ***
-#Library    ../Library/LibFrontend.py
-Resource    ../POM/FrontendPOM.resource
 Resource    ../Resources/ResFrontend.resource
-
+Resource    ../POM/HeaderPage.resource
+Resource    ../POM/LoginPage.resource
+Resource    ../POM/Variable.resource
+Resource    ../POM/ContactsUsPage.resource
 
 *** Test Cases ***
-Register User with existing email
+Contact Us Form
     Open '${URL}' With '${EDGE}'
     Check '${Automation_exercice_xpath}' visibility
     Click '${Contact_us_xpath}'

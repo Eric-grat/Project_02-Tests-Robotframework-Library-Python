@@ -81,23 +81,6 @@ class LibFrontend(SeleniumLibrary):
                 return f"Le message d'erreur ne correspond pas. Attendu :'{excepted_error_message}', Trouvé :{error_message} "
         except Exception as e:
             return f"Aucun message d'erreur trouvé. Exception: {str(e)}"
-        
-        
-    
-    #@keyword
-    #def radio_button_selected(self, radio_button_locator, value):
-        
-        # Vérifier que le bouton est visible
-        #self.wait_until_element_is_visible(radio_button_locator, timeout=20)
-        #self.get_webelement(radio_button_locator)
-        #self.element_should_be_visible(radio_button_locator)
-    
-        """Vérifie si un radio bouton est visible et activé, puis le sélectionne."""
-        # Vérifier qu'il est activé
-        #self.element_should_be_enabled(radio_button_locator)
-        # Sélectionner le radio bouton
-        #radio_button_locator = f"//input[@name="title" and @value='{value}']"
-        #self.select_radio_button(radio_button_locator)
             
             
     @keyword
@@ -134,9 +117,6 @@ class LibFrontend(SeleniumLibrary):
     
     @keyword
     def accept_alerte(self):
-        #alert_text = self.get_alert_message()
-        #if alert_text != expected_message:
-            #raise AssertionError(f"Le message attendu était : '{expected_message}', mais reçu : '{alert_text}'")
         self.handle_alert(action="ACCEPT")
         
         
