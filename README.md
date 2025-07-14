@@ -23,7 +23,7 @@ L'objectif de ce projet est de fournir une suite de tests automatisés pour assu
 + Behavior-Driven approach (BDD)
 
 
-## :diamond_shape_with_a_dot_inside: 
+## :diamond_shape_with_a_dot_inside: Le projet comprend 10 cas de test :
 
 ### :white_check_mark: Cas de test 1 : Enregistrer l'utilisateur
 <ol>1.Lancez le navigateur</ol>
